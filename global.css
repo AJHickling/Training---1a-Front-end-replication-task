@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center, section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    height: 100px;
+    background-color: #D5E8D4;
+    border: 1px solid #82B366;
+}
+
+p {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+section {
+    border: 1px solid black;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-height: 500px;
+}
+
+div {
+    border: 1px solid black;
+    height: 300px;
+    margin: auto 1rem;
+}
